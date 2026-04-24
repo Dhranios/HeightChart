@@ -106,11 +106,11 @@ class Entry {
     }
 
     // fallback if image fails
-    this.img.onerror = () => {
-      this.img.src = 'entries/missing.png';
-      this.alignBottom = 0;
-      this.alignTop = 0;
-    };
+    //this.img.onerror = () => {
+    //  this.img.src = 'entries/missingno.png';
+    //  this.alignBottom = 0;
+    //  this.alignTop = 0;
+    //};
     this.img.onload = () => {
       const naturalHeight = this.img.naturalHeight;
 
