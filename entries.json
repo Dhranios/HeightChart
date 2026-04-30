@@ -261,6 +261,14 @@
         },
         {
             "owner": "eclipsethecrossfoxtaur",
+            "name": "Sierra 🔥",
+            "height": "10'8''",
+            "art": "sierra",
+            "align_bottom": 103,
+            "align_top": 510
+        },
+        {
+            "owner": "eclipsethecrossfoxtaur",
             "name": "Skyye Rivera ☽𓆙",
             "height": "300",
             "art": "skyye rivera",
@@ -402,6 +410,14 @@
             "art": "sapphire synth",
             "align_bottom": 42,
             "align_top": 71
+        },
+        {
+            "owner": "kaelygon",
+            "name": "Tiena",
+            "height": "120",
+            "art": "tiena",
+            "align_bottom": 97,
+            "align_top": 200
         },
         {
             "owner": "kapxl",
@@ -626,6 +642,14 @@
             "art": "vilvo",
             "align_bottom": 26,
             "align_top": 41
+        },
+        {
+            "owner": "neovio_",
+            "name": "Neovio",
+            "height": "178",
+            "art": "neovio",
+            "align_bottom": 64,
+            "align_top": 75
         },
         {
             "owner": "qnectd",

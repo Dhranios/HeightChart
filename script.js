@@ -49,7 +49,7 @@ function layout() {
   let x = 0;
   parsedEntries.forEach(entry => {
     entry.render(chart);
-    entry.element.style.top = `${maxHeight - entry.heightCm - entry.alignTop + 10}px`; //10 px offset for some reason...
+    entry.element.style.top = `${maxHeight - entry.heightCm - entry.alignTop + 9}px`; //9 px offset for some reason...
     entry.element.style.left = `${x}px`;
     x += entry.element.offsetWidth + 5;
   });
@@ -97,7 +97,6 @@ class Entry {
     this.imageWrapper = document.createElement('div');
     this.imageWrapper.className = 'image-wrapper';
 
-    // Parse height
     if (height.includes("'")) {
       const temp = height.slice(0, -2).split("'");
       this.heightCm = parseFloat(temp[0]) * 30.48 + parseFloat(temp[1]) * 2.54;
@@ -138,7 +137,6 @@ class Entry {
     this.updateText();
   }
 
-  // ---- Height conversion ----
   getHeightIn(format) {
     if (format === "ft") {
       let inches = this.heightCm / 30.48;
@@ -150,7 +148,6 @@ class Entry {
     }
   }
 
-  // ---- Update text ----
   updateText(showOwner = true) {
     if (showOwner) {
       this.titleEl.textContent = `${this.name} (${this.owner})`;
@@ -162,19 +159,15 @@ class Entry {
     this.cmEl.textContent = "cm: " + this.getHeightIn("cm");
   }
 
-  // ---- Filtering (like is_owner) ----
-  isOwner(ownerFilter, lightMode) {
+  isOwner(ownerFilter) {
     if (ownerFilter === "") {
       this.hidden = false;
       this.updateText(true);
-      this.setTextColor(lightMode ? "dark" : "light");
       return true;
     }
-
     if (ownerFilter === this.owner) {
       this.hidden = false;
       this.updateText(false);
-      this.setTextColor(lightMode ? "dark" : "light");
       return true;
     }
 
@@ -183,21 +176,6 @@ class Entry {
     return false;
   }
 
-  // ---- Text color ----
-  setTextColor(type) {
-    const color = type === "dark" ? "black" : "white";
-    this.titleEl.style.color = color;
-    this.ftEl.style.color = color;
-    this.cmEl.style.color = color;
-  }
-
-  // ---- Positioning (replacement for rect.x) ----
-  moveRight(amount) {
-    this.element.style.position = "absolute";
-    this.element.style.left = amount + "px";
-  }
-
-  // ---- Render (replacement for draw) ----
   render(container) {
     if (!this.hidden) {
       this.element.style.display = "block";
