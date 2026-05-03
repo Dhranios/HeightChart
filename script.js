@@ -152,6 +152,9 @@ async function continueProcessing() {
           }
         });
       });
+      c.owners.sort((a, b) =>
+        a.GetName().localeCompare(b.GetName(), undefined, { sensitivity: 'base' })
+      );
     });
     //Sort all entries from tallest to shortest
     parsedEntries.sort((a, b) => {

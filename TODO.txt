@@ -1,2 +1,0 @@
-Add button to filter owner
-Add button to swap to meter lines
