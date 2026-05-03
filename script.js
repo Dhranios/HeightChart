@@ -83,10 +83,6 @@ fetch("entries.json").then(response => response.json()).then(data => {
       console.log("Parsing chart:", c);
       const chartEntry = new Chart(c, chartdata.chart ?? c, chartdata.owners);
       serverCharts.push(chartEntry);
-      const serverSelectorOption = document.createElement("option");
-      serverSelectorOption.value = chartEntry.GetID();
-      serverSelectorOption.textContent = chartEntry.GetName();
-      serverSelector.appendChild(serverSelectorOption);
       chartdata.owners.forEach(o => {
         //If owner was not previously found, get all owner's entries
         if (!parsedOwners.includes(o)) {
@@ -147,7 +143,21 @@ async function continueProcessing() {
   Promise.all(parsedEntries.map(entry => waitForImage(entry.img))).then(() => {
     //Sort all entries from tallest to shortest
     parsedEntries.sort((a, b) => {
-      return b.heightCm - a.heightCm;
+      if (b.heightCm == a.heightCm) {
+        return a.name.localeCompare(b.name, undefined, { sensitivity: 'base' });
+      }
+      else {
+        return b.heightCm - a.heightCm;
+      }
+    });
+    serverCharts.sort((a, b) =>
+      a.GetID().localeCompare(b.GetID(), undefined, { sensitivity: 'base' })
+    );
+    serverCharts.forEach(chartEntry => {
+      const serverSelectorOption = document.createElement("option");
+      serverSelectorOption.value = chartEntry.GetID();
+      serverSelectorOption.textContent = chartEntry.GetName();
+      serverSelector.appendChild(serverSelectorOption);
     });
     canFilter = true;
     updateParams();
