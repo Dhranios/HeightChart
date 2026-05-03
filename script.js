@@ -14,7 +14,18 @@ let nextElementX = 0;
 
 let HeightMeters = false;
 
+
+const Selectors = document.getElementById("selectors");
+const SelectorsOffset = document.getElementById("offset");
+const FakeHeightButton = document.getElementById("FakeHeightButton");
 const HeightButton = document.getElementById("HeightButton");
+HeightButton.style.height = Math.max(parseFloat(HeightButton.getBoundingClientRect().height), parseFloat(FakeHeightButton.getBoundingClientRect().height)) + "px";
+HeightButton.style.width = Math.max(parseFloat(HeightButton.getBoundingClientRect().width), parseFloat(FakeHeightButton.getBoundingClientRect().width)) + "px";
+FakeHeightButton.style.display = "none";
+Selectors.style.height = HeightButton.getBoundingClientRect().height + "px";
+SelectorsOffset.style.height = HeightButton.getBoundingClientRect().height + "px";
+
+
 
 HeightButton.addEventListener("click", () => {
   HeightMeters = !HeightMeters;
@@ -186,7 +197,7 @@ function layout() {
   maxHeight = 70;
   parsedEntries.forEach(entry => {
     if (!entry.hidden) {
-      maxHeight = Math.max(maxHeight, entry.heightCm + entry.alignTop + 54); //54 for the text
+      maxHeight = Math.max(maxHeight, entry.heightCm + entry.alignTop + entry.getTextHeight());
       maxAlignBottom = Math.max(maxAlignBottom, entry.alignBottom);
     }
   });
@@ -197,7 +208,7 @@ function layout() {
   parsedEntries.forEach(entry => {
     if (!entry.hidden) {
       entry.render(chart);
-      entry.element.style.top = `${maxHeight - entry.heightCm - entry.alignTop - 54}px`; //54 for the text
+      entry.element.style.top = `${maxHeight - entry.heightCm - entry.alignTop - entry.getTextHeight()}px`;
       entry.element.style.left = `${nextElementX}px`;
       nextElementX += entry.element.offsetWidth + 5;
     }
@@ -363,6 +374,9 @@ class Entry {
     this.element.appendChild(this.imageWrapper);
 
     this.updateText();
+  }
+  getTextHeight() {
+    return this.textWrapper.getBoundingClientRect().height;
   }
 
   getHeightIn(format) {

@@ -4,13 +4,10 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 100%;
-}
-#offset {
-  height: 25px;
+  background: lightblue;
+  border: 5px solid lightblue;
 }
 #HeightButton {
-  width: 144px;
   z-index: 1;
 }
 #chart {
