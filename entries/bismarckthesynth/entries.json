@@ -1,0 +1,67 @@
+{
+    "entries": [
+        {
+            "name": "DEFCON (orbital)",
+            "height": "15'5''",
+            "art": "defcon orbital",
+            "align_bottom": 9,
+            "align_top": 79
+        },
+        {
+            "name": "DEFCON (shark)",
+            "height": "12'0''",
+            "art": "defcon shark",
+            "align_bottom": 2,
+            "align_top": 13
+        },
+        {
+            "name": "DEFCON (hunter)",
+            "height": "11'0''",
+            "art": "defcon hunter",
+            "align_bottom": 2,
+            "align_top": 13
+        },
+        {
+            "name": "Bismarck",
+            "height": "8'6''",
+            "art": "bismarck",
+            "align_bottom": 42,
+            "align_top": 71
+        },
+        {
+            "name": "Intrepid",
+            "height": "8'6''",
+            "art": "intrepid",
+            "align_bottom": 42,
+            "align_top": 71
+        },
+        {
+            "name": "Leningrad",
+            "height": "8'6''",
+            "art": "leningrad",
+            "align_bottom": 42,
+            "align_top": 71
+        },
+        {
+            "name": "Devilfish",
+            "height": "7'10''",
+            "art": "devilfish",
+            "align_bottom": 42,
+            "align_top": 71
+        },
+        {
+            "name": "Kreig",
+            "height": "7'10''",
+            "art": "kreig",
+            "align_bottom": 42,
+            "align_top": 71
+        },
+        {
+            "name": "Whiskey",
+            "height": "7'10''",
+            "art": "whiskey",
+            "align_bottom": 42,
+            "align_top": 71
+        }
+    ]
+}

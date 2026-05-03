@@ -1,0 +1,60 @@
+{
+    "entries": [
+        {
+            "name": "Club '28'",
+            "height": "385",
+            "art": "club 28",
+            "align_bottom": 52,
+            "align_top": 0
+        },
+        {
+            "name": "King",
+            "height": "385",
+            "art": "king",
+            "align_bottom": 52,
+            "align_top": 0
+        },
+        {
+            "name": "Spade",
+            "height": "385",
+            "art": "spade",
+            "align_bottom": 52,
+            "align_top": 0
+        },
+        {
+            "name": "X",
+            "height": "385",
+            "art": "x",
+            "align_bottom": 52,
+            "align_top": 0
+        },
+        {
+            "name": "Gh0st",
+            "height": "6'5''",
+            "art": "gh0st",
+            "align_bottom": 184,
+            "align_top": 84
+        },
+        {
+            "name": "Andr3w",
+            "height": "6'2''",
+            "art": "andr3w",
+            "align_bottom": 189,
+            "align_top": 85
+        },
+        {
+            "name": "B1te",
+            "height": "5'11''",
+            "art": "b1te",
+            "align_bottom": 104,
+            "align_top": 54
+        },
+        {
+            "name": "Echo",
+            "height": "5'7''",
+            "art": "echo",
+            "align_bottom": 104,
+            "align_top": 54
+        }
+    ]
+}

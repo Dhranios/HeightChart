@@ -1,0 +1,130 @@
+{
+    "entries": [
+        {
+            "name": "Aster (lion, hyena, deer hybrid)",
+            "height": "20'0''",
+            "art": "aster hybrid",
+            "align_bottom": 53,
+            "align_top": 75
+        },
+        {
+            "name": "Aster (wereworlf)",
+            "height": "6'4''",
+            "art": "aster werewolf",
+            "align_bottom": 25,
+            "align_top": 55
+        },
+        {
+            "name": "Lyre (dragon)",
+            "height": "6'1''",
+            "art": "lyre dragon",
+            "align_bottom": 33,
+            "align_top": 72
+        },
+        {
+            "name": "Stellar (wolf)",
+            "height": "6'0''",
+            "art": "stellar wolf",
+            "align_bottom": 29,
+            "align_top": 58
+        },
+        {
+            "name": "Aster (human)",
+            "height": "5'4''",
+            "art": "aster human",
+            "align_bottom": 9,
+            "align_top": 17
+        },
+        {
+            "name": "Aster (protogen)",
+            "height": "5'4''",
+            "art": "aster protogen",
+            "align_bottom": 64,
+            "align_top": 57
+        },
+        {
+            "name": "Aster (racoon)",
+            "height": "5'4''",
+            "art": "aster racoon",
+            "align_bottom": 30,
+            "align_top": 51
+        },
+        {
+            "name": "Corhyn (bear)",
+            "height": "5'4''",
+            "art": "corhyn bear",
+            "align_bottom": 42,
+            "align_top": 19
+        },
+        {
+            "name": "Corhyn (tiger)",
+            "height": "5'4''",
+            "art": "corhyn tiger",
+            "align_bottom": 37,
+            "align_top": 62
+        },
+        {
+            "name": "Knox",
+            "height": "5'4''",
+            "art": "knox",
+            "align_bottom": 25,
+            "align_top": 56
+        },
+        {
+            "name": "Lyre (doggo)",
+            "height": "5'4''",
+            "art": "lyre doggo",
+            "align_bottom": 70,
+            "align_top": 60
+        },
+        {
+            "name": "Reed",
+            "height": "5'4''",
+            "art": "reed",
+            "align_bottom": 33,
+            "align_top": 28
+        },
+        {
+            "name": "Stellar (ferret)",
+            "height": "5'4''",
+            "art": "stellar ferret",
+            "align_bottom": 35,
+            "align_top": 36
+        },
+        {
+            "name": "Chip",
+            "height": "5'0''",
+            "art": "chip",
+            "align_bottom": 33,
+            "align_top": 72
+        },
+        {
+            "name": "Fathom (moth)",
+            "height": "4'11''",
+            "art": "fathom moth",
+            "align_bottom": 63,
+            "align_top": 37
+        },
+        {
+            "name": "Fathom (poochena)",
+            "height": "4'11''",
+            "art": "fathom poochena",
+            "align_bottom": 18,
+            "align_top": 103
+        },
+        {
+            "name": "Konu",
+            "height": "2'9''",
+            "art": "konu",
+            "align_bottom": 22,
+            "align_top": 81
+        },
+        {
+            "name": "Lindhart",
+            "height": "0'7''",
+            "art": "lindhart",
+            "align_bottom": 17,
+            "align_top": 32
+        }
+    ]
+}

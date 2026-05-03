@@ -1,0 +1,18 @@
+{
+    "entries": [
+        {
+            "name": "Celdryn",
+            "height": "8'10''",
+            "art": "celdryn",
+            "align_bottom": 9,
+            "align_top": 1010
+        },
+        {
+            "name": "Razanth",
+            "height": "4'8''",
+            "art": "razanth",
+            "align_bottom": 3,
+            "align_top": 161
+        }
+    ]
+}

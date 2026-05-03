@@ -1,0 +1,18 @@
+{
+    "entries": [
+        {
+            "name": "Tunr",
+            "height": "5'10''",
+            "art": "tunr",
+            "align_bottom": 129,
+            "align_top": 110
+        },
+        {
+            "name": "Light Unit",
+            "height": "5'8''",
+            "art": "light unit",
+            "align_bottom": 42,
+            "align_top": 70
+        }
+    ]
+}

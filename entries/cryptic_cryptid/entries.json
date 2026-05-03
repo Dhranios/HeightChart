@@ -1,0 +1,25 @@
+{
+    "entries": [
+        {
+            "name": "Calluna",
+            "height": "11'2''",
+            "art": "calluna",
+            "align_bottom": 149,
+            "align_top": 167
+        },
+        {
+            "name": "Nyla Vanduur",
+            "height": "6'3''",
+            "art": "nyla vanduur",
+            "align_bottom": 109,
+            "align_top": 172
+        },
+        {
+            "name": "M0FF",
+            "height": "6'0''",
+            "art": "m0ff",
+            "align_bottom": 121,
+            "align_top": 171
+        }
+    ]
+}

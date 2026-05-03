@@ -1,0 +1,18 @@
+{
+    "entries": [
+        {
+            "name": "C0r3",
+            "height": "8'6''",
+            "art": "c0r3",
+            "align_bottom": 48,
+            "align_top": 73
+        },
+        {
+            "name": "Core",
+            "height": "8'0''",
+            "art": "core",
+            "align_bottom": 218,
+            "align_top": 130
+        }
+    ]
+}

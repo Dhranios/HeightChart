@@ -1,0 +1,32 @@
+{
+    "entries": [
+        {
+            "name": "Naxa",
+            "height": "195",
+            "art": "naxa",
+            "align_bottom": 62,
+            "align_top": 203
+        },
+        {
+            "name": "Nivergo",
+            "height": "195",
+            "art": "nivergo",
+            "align_bottom": 20,
+            "align_top": 148
+        },
+        {
+            "name": "Bruce",
+            "height": "165",
+            "art": "bruce",
+            "align_bottom": 72,
+            "align_top": 95
+        },
+        {
+            "name": "Fixo",
+            "height": "165",
+            "art": "fixo",
+            "align_bottom": 114,
+            "align_top": 116
+        }
+    ]
+}

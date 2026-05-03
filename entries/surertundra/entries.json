@@ -1,0 +1,18 @@
+{
+    "entries": [
+        {
+            "name": "Tomo (sitting)",
+            "height": "6'2''",
+            "art": "tomo sitting",
+            "align_bottom": 429,
+            "align_top": 143
+        },
+        {
+            "name": "Tundra Decaera",
+            "height": "5'6''",
+            "art": "tundra decaera",
+            "align_bottom": 0,
+            "align_top": 16
+        }
+    ]
+}

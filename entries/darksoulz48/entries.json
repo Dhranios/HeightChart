@@ -1,0 +1,32 @@
+{
+    "entries": [
+        {
+            "name": "Rulo'th (dralox)",
+            "height": "12'0''",
+            "art": "ruloth dralox",
+            "align_bottom": 467,
+            "align_top": 0
+        },
+        {
+            "name": "Rulo'th (mega charizard X)",
+            "height": "9'8''",
+            "art": "ruloth mega charizard x",
+            "align_bottom": 100,
+            "align_top": 313
+        },
+        {
+            "name": "Rulo'th (xenojiiva)",
+            "height": "6'8''",
+            "art": "ruloth xenojiiva",
+            "align_bottom": 79,
+            "align_top": 406
+        },
+        {
+            "name": "Rulo'th (goodra)",
+            "height": "5'6''",
+            "art": "ruloth goodra",
+            "align_bottom": 153,
+            "align_top": 295
+        }
+    ]
+}

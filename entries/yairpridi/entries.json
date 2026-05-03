@@ -1,0 +1,67 @@
+{
+    "entries": [
+        {
+            "name": "Yairden (dragon)",
+            "height": "13'0''",
+            "art": "yairden dragon",
+            "align_bottom": 770,
+            "align_top": 204
+        },
+        {
+            "name": "Yairden (synth)",
+            "height": "13'0''",
+            "art": "yairden synth",
+            "align_bottom": 100,
+            "align_top": 56
+        },
+        {
+            "name": "Jaran",
+            "height": "8'5''",
+            "art": "jaran",
+            "align_bottom": 143,
+            "align_top": 42
+        },
+        {
+            "name": "Regal",
+            "height": "8'2''",
+            "art": "regal",
+            "align_bottom": 41,
+            "align_top": 55
+        },
+        {
+            "name": "Pardigri",
+            "height": "7'0''",
+            "art": "pardigri",
+            "align_bottom": 95,
+            "align_top": 32
+        },
+        {
+            "name": "Drago Jouper",
+            "height": "6'6''",
+            "art": "drago jouper",
+            "align_bottom": 17,
+            "align_top": 29
+        },
+        {
+            "name": "Neptune",
+            "height": "6'0''",
+            "art": "neptune",
+            "align_bottom": 51,
+            "align_top": 57
+        },
+        {
+            "name": "Cueper Jouper",
+            "height": "5'8''",
+            "art": "cueper jouper",
+            "align_bottom": 53,
+            "align_top": 34
+        },
+        {
+            "name": "Catto Jouper",
+            "height": "5'7''",
+            "art": "catto jouper",
+            "align_bottom": 30,
+            "align_top": 83
+        }
+    ]
+}

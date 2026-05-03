@@ -1,0 +1,18 @@
+{
+    "entries": [
+        {
+            "name": "Kašer",
+            "height": "330",
+            "art": "kaser",
+            "align_bottom": 56,
+            "align_top": 96
+        },
+        {
+            "name": "Kiru",
+            "height": "2'9''",
+            "art": "kiru",
+            "align_bottom": 26,
+            "align_top": 163
+        }
+    ]
+}

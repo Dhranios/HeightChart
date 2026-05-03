@@ -1,0 +1,19 @@
+{
+    "owner_name": "neovio_",
+    "entries": [
+        {
+            "name": "Vilvo",
+            "height": "180",
+            "art": "vilvo",
+            "align_bottom": 26,
+            "align_top": 41
+        },
+        {
+            "name": "Neovio",
+            "height": "178",
+            "art": "neovio",
+            "align_bottom": 64,
+            "align_top": 75
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "entries": [
+        {
+            "name": "Skyye (Rayquaza) ☽𓆙",
+            "height": "70'0''",
+            "art": "skyye rayquaza",
+            "align_bottom": 0,
+            "align_top": 311
+        },
+        {
+            "name": "Lyn ❀",
+            "height": "28'0''",
+            "art": "lyn",
+            "align_bottom": 90,
+            "align_top": 46
+        },
+        {
+            "name": "Cloud (full size) ☽◯☾",
+            "height": "25'0''",
+            "art": "cloud",
+            "align_bottom": 54,
+            "align_top": 202
+        },
+        {
+            "name": "Cloud (anthro) ☽◯☾",
+            "height": "11'0''",
+            "art": "cloud",
+            "align_bottom": 54,
+            "align_top": 202
+        },
+        {
+            "name": "Sierra 🔥",
+            "height": "10'8''",
+            "art": "sierra",
+            "align_bottom": 103,
+            "align_top": 510
+        },
+        {
+            "name": "Skyye Rivera ☽𓆙",
+            "height": "300",
+            "art": "skyye rivera",
+            "align_bottom": 68,
+            "align_top": 85
+        },
+        {
+            "name": "Cloud (small) ☽◯☾",
+            "height": "8'0''",
+            "art": "cloud",
+            "align_bottom": 54,
+            "align_top": 202
+        },
+        {
+            "name": "Ember 🔥",
+            "height": "7'8''",
+            "art": "ember",
+            "align_bottom": 47,
+            "align_top": 128
+        },
+        {
+            "name": "Frost ❄",
+            "height": "7'8''",
+            "art": "frost",
+            "align_bottom": 47,
+            "align_top": 128
+        },
+        {
+            "name": "Eclipse ☽◯☾",
+            "height": "7'7.75''",
+            "art": "eclipse",
+            "align_bottom": 176,
+            "align_top": 145
+        }
+    ]
+}

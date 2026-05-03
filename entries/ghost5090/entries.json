@@ -1,0 +1,11 @@
+{
+    "entries": [
+        {
+            "name": "Ghost",
+            "height": "200",
+            "art": "ghost",
+            "align_bottom": 89,
+            "align_top": 193
+        }
+    ]
+}

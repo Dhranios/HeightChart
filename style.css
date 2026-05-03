@@ -1,13 +1,30 @@
+#selectors {
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+#offset {
+  height: 25px;
+}
+#HeightButton {
+  width: 144px;
+  z-index: 1;
+}
 #chart {
   position: relative;
   display: block;
-  overflow-x: auto;       /* allows horizontal scrolling */
+  overflow-x: auto;
+  width: 100%;
+  padding-bottom: 20px;
 }
 .entry {
   position: absolute;
   align-items: center;
-  width: auto; /* important */
-  z-index: 2;
+  width: auto;
+  z-index: 1;
 }
 .image-wrapper {
   position: relative;
@@ -29,7 +46,6 @@
   position: absolute;
   bottom: 0;
   left: 0;
-
   background: red;
   z-index: 0;
 }
@@ -37,7 +53,6 @@
   position: absolute;
   bottom: 0;
   left: 0;
-
   background: blue;
   z-index: 0;
 }

@@ -1,0 +1,18 @@
+{
+    "entries": [
+        {
+            "name": "Ferno",
+            "height": "5'8''",
+            "art": "ferno",
+            "align_bottom": 27,
+            "align_top": 65
+        },
+        {
+            "name": "Blaze",
+            "height": "5'5''",
+            "art": "blaze",
+            "align_bottom": 27,
+            "align_top": 17
+        }
+    ]
+}

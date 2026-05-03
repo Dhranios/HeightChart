@@ -1,0 +1,18 @@
+{
+    "entries": [
+        {
+            "name": "Sapphire (dragon)",
+            "height": "35'0''",
+            "art": "sapphire dragon",
+            "align_bottom": 26,
+            "align_top": 362
+        },
+        {
+            "name": "Sapphire (synth)",
+            "height": "10'0''",
+            "art": "sapphire synth",
+            "align_bottom": 42,
+            "align_top": 71
+        }
+    ]
+}

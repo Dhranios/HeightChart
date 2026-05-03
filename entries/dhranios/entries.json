@@ -1,0 +1,18 @@
+{
+    "entries": [
+        {
+            "name": "Cipher",
+            "height": "200",
+            "art": "cipher",
+            "align_bottom": 42,
+            "align_top": 71
+        },
+        {
+            "name": "Excyse",
+            "height": "195",
+            "art": "excyse",
+            "align_bottom": 42,
+            "align_top": 71
+        }
+    ]
+}
