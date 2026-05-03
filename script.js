@@ -23,7 +23,7 @@ HeightButton.style.height = Math.max(parseFloat(HeightButton.getBoundingClientRe
 HeightButton.style.width = Math.max(parseFloat(HeightButton.getBoundingClientRect().width), parseFloat(FakeHeightButton.getBoundingClientRect().width)) + "px";
 FakeHeightButton.style.display = "none";
 Selectors.style.height = HeightButton.getBoundingClientRect().height + "px";
-SelectorsOffset.style.height = HeightButton.getBoundingClientRect().height + "px";
+SelectorsOffset.style.height = HeightButton.getBoundingClientRect().height + 10 + "px";
 
 
 
@@ -372,11 +372,15 @@ class Entry {
     this.imageWrapper.appendChild(this.img);
     this.element.appendChild(this.textWrapper);
     this.element.appendChild(this.imageWrapper);
-
+    this.previousTextSize = HeightButton.getBoundingClientRect().height * 3;
     this.updateText();
   }
   getTextHeight() {
-    return this.textWrapper.getBoundingClientRect().height;
+    if (this.textWrapper.getBoundingClientRect().height != 0) {
+      this.previousTextSize = this.textWrapper.getBoundingClientRect().height
+      return this.textWrapper.getBoundingClientRect().height;
+    }
+    return this.previousTextSize;
   }
 
   getHeightIn(format) {
