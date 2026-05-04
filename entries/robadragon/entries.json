@@ -6,6 +6,13 @@
             "art": "zypharix vazhora",
             "align_bottom": 67,
             "align_top": 313
+        },
+        {
+            "name": "Mortem",
+            "height": "5'10''",
+            "art": "mortem",
+            "align_bottom": 224,
+            "align_top": 188
         }
     ]
 }
