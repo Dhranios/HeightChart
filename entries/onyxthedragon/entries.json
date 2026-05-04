@@ -7,6 +7,13 @@
             "art": "onyx",
             "align_bottom": 71,
             "align_top": 245
+        },
+        {
+            "name": "Praca",
+            "height": "7'0''",
+            "art": "praca",
+            "align_bottom": 82,
+            "align_top": 154
         }
     ]
 }
