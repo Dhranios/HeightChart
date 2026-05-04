@@ -2,6 +2,20 @@
     "owner_name": "xander_.",
     "entries": [
         {
+            "name": "Kalcius (cyborg)",
+            "height": "4'11''",
+            "art": "kalcius cyborg",
+            "align_bottom": 80,
+            "align_top": 54
+        },
+        {
+            "name": "Achillem",
+            "height": "4'6''",
+            "art": "achillem",
+            "align_bottom": 94,
+            "align_top": 94
+        },
+        {
             "name": "Luna",
             "height": "3'5''",
             "art": "luna",
