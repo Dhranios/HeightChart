@@ -1,0 +1,18 @@
+{
+    "entries": [
+        {
+            "name": "Minrok (chak'torin)",
+            "height": "910",
+            "art": "minrok chaktorin",
+            "align_bottom": 38,
+            "align_top": 269
+        },
+        {
+            "name": "Minrok (chak'tarak)",
+            "height": "220",
+            "art": "minrok chaktarak",
+            "align_bottom": 49,
+            "align_top": 318
+        }
+    ]
+}
