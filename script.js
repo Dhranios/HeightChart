@@ -206,7 +206,7 @@ async function continueProcessing() {
       serverSelector.appendChild(serverSelectorOption);
     });
     canFilter = true;
-    layout();
+    setChart(serverSelector.value);
   });
 }
 continueProcessing();
