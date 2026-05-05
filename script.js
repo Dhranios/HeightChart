@@ -3,12 +3,10 @@ let parsedEntries = [];
 let serverCharts = [];
 let parsedOwners = [];
 let ownersEntries = [];
-let processingFiles = [
-  "entries.json"
-]
-let processedFiles = []
+let processingFiles = [];
+let processedFiles = [];
 canFilter = false;
-let ownerFilter = []
+let ownerFilter = [];
 let maxHeight = 70;
 let nextElementX = 0;
 
@@ -36,39 +34,102 @@ HeightButton.addEventListener("click", () => {
     ChangeHeightDisplay()
   }
 });
-
-window.addEventListener("hashchange", () => {
-  if (canFilter) {
-    updateParams();
-  }
-});
-function updateParams() {
-  const params = new URLSearchParams(window.location.search);
-  if (params.get("server")) {
-    let exists = false;
-    serverCharts.forEach(chartEntry => {
-      if (chartEntry.GetID() == params.get("server")) {
-        exists = true;
-      }
-    });
-    if (exists) {
-      serverSelector.value = params.get("server");
-      serverSelector.style.display = "none";
-    }
-    else {
-      serverSelector.style.display = "block";
-      serverSelector.selectedIndex = 0;
-    }
-  }
-  else {
-    serverSelector.style.display = "block";
-    serverSelector.selectedIndex = 0;
-  }
-  setChart(serverSelector.value);
-}
-
 const serverSelector = document.getElementById("serverSelector");
 const ownerSelector = document.getElementById("ownerSelector");
+const params = new URLSearchParams(window.location.search);
+if (params.get("server")) {
+  serverSelector.style.display = "none";
+  
+  let c = params.get("server");
+  // Get the chart
+  processingFiles.push("entries/" + c + ".json");
+  fetch("entries/" + c + ".json").then(response => {
+    if (!response.ok) {
+      throw new Error("File not found");
+    }
+    return response.json();
+  }).then(chartdata => {
+    console.log("Parsing chart:", c);
+    const chartEntry = new Chart(c, chartdata.chart ?? c, chartdata.owners);
+    serverCharts.push(chartEntry);
+    chartdata.owners.forEach(o => {
+      //If owner was not previously found, get all owner's entries
+      if (!parsedOwners.includes(o)) {
+        parsedOwners.push(o);
+        processingFiles.push("entries/" + o + "/entries.json");
+        fetch("entries/" + o + "/entries.json").then(response => response.json()).then(ownerdata => {
+          console.log("Parsing owner:", o);
+          const ownerEntry = new Owner(o, ownerdata.owner_name);
+          ownersEntries.push(ownerEntry);
+          ownerdata.entries.forEach(e => {
+            const entry = new Entry(
+              o,
+              ownerdata.owner_name,
+              e.name,
+              e.height,
+              e.art,
+              e.align_bottom,
+              e.align_top
+            );
+            parsedEntries.push(entry);
+          });
+          console.log("Parsed owner:", o);
+          processedFiles.push("entries/" + o + "/entries.json");
+        });
+      }
+    });
+    console.log("Parsed chart:", c);
+    processedFiles.push("entries/" + c + ".json");
+  }).catch(err => {
+    console.error(err);
+    document.getElementById("loadingmessage1").textContent = "The selected chart does not exist";
+    document.getElementById("loadingmessage2").textContent = "Did you type it correctly?";
+  });
+}
+else {
+  // Get all charts
+  processingFiles.push("entries.json");
+  fetch("entries.json").then(response => response.json()).then(data => {
+    data.charts.forEach(c => {
+      //Get all individual charts' data
+      processingFiles.push("entries/" + c + ".json");
+      fetch("entries/" + c + ".json").then(response => response.json()).then(chartdata => {
+        console.log("Parsing chart:", c);
+        const chartEntry = new Chart(c, chartdata.chart ?? c, chartdata.owners);
+        serverCharts.push(chartEntry);
+        chartdata.owners.forEach(o => {
+          //If owner was not previously found, get all owner's entries
+          if (!parsedOwners.includes(o)) {
+            parsedOwners.push(o);
+            processingFiles.push("entries/" + o + "/entries.json");
+            fetch("entries/" + o + "/entries.json").then(response => response.json()).then(ownerdata => {
+              console.log("Parsing owner:", o);
+              const ownerEntry = new Owner(o, ownerdata.owner_name);
+              ownersEntries.push(ownerEntry);
+              ownerdata.entries.forEach(e => {
+                const entry = new Entry(
+                  o,
+                  ownerdata.owner_name,
+                  e.name,
+                  e.height,
+                  e.art,
+                  e.align_bottom,
+                  e.align_top
+                );
+                parsedEntries.push(entry);
+              });
+              console.log("Parsed owner:", o);
+              processedFiles.push("entries/" + o + "/entries.json");
+            });
+          }
+        });
+        console.log("Parsed chart:", c);
+        processedFiles.push("entries/" + c + ".json");
+      });
+      processedFiles.push("entries.json");
+    });
+  });
+}
 
 serverSelector.addEventListener("change", (e) => {
   if (canFilter) {
@@ -86,47 +147,6 @@ ownerSelector.addEventListener("change", (e) => {
   }
 });
 
-// Get all charts
-fetch("entries.json").then(response => response.json()).then(data => {
-  data.charts.forEach(c => {
-    //Get all individual charts' data
-    processingFiles.push("entries/" + c + ".json");
-    fetch("entries/" + c + ".json").then(response => response.json()).then(chartdata => {
-      console.log("Parsing chart:", c);
-      const chartEntry = new Chart(c, chartdata.chart ?? c, chartdata.owners);
-      serverCharts.push(chartEntry);
-      chartdata.owners.forEach(o => {
-        //If owner was not previously found, get all owner's entries
-        if (!parsedOwners.includes(o)) {
-          parsedOwners.push(o);
-          processingFiles.push("entries/" + o + "/entries.json");
-          fetch("entries/" + o + "/entries.json").then(response => response.json()).then(ownerdata => {
-            console.log("Parsing owner:", o);
-            const ownerEntry = new Owner(o, ownerdata.owner_name);
-            ownersEntries.push(ownerEntry);
-            ownerdata.entries.forEach(e => {
-              const entry = new Entry(
-                o,
-                ownerdata.owner_name,
-                e.name,
-                e.height,
-                e.art,
-                e.align_bottom,
-                e.align_top
-              );
-              parsedEntries.push(entry);
-            });
-            console.log("Parsed owner:", o);
-            processedFiles.push("entries/" + o + "/entries.json");
-          });
-        }
-      });
-      console.log("Parsed chart:", c);
-      processedFiles.push("entries/" + c + ".json");
-    });
-    processedFiles.push("entries.json");
-  });
-});
 function waitUntilProcessed(processingFiles, processedFiles) {
   return new Promise(resolve => {
     const interval = setInterval(() => {
@@ -186,7 +206,6 @@ async function continueProcessing() {
       serverSelector.appendChild(serverSelectorOption);
     });
     canFilter = true;
-    updateParams();
     layout();
   });
 }

@@ -2,9 +2,16 @@
     "owner_name": "_andarithedragon_",
     "entries": [
         {
-            "name": "Andari",
+            "name": "Andari (anthro)",
+            "height": "185",
+            "art": "andari anthro",
+            "align_bottom": 262,
+            "align_top": 175
+        },
+        {
+            "name": "Andari (dragon)",
             "height": "1'5''",
-            "art": "andari",
+            "art": "andari dragon",
             "align_bottom": 711,
             "align_top": 673
         }

@@ -1,0 +1,18 @@
+{
+    "entries": [
+        {
+            "name": "V3x",
+            "height": "6'5''",
+            "art": "v3x",
+            "align_bottom": 82,
+            "align_top": 240
+        },
+        {
+            "name": "Vex",
+            "height": "6'3''",
+            "art": "vex",
+            "align_bottom": 82,
+            "align_top": 240
+        }
+    ]
+}
