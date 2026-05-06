@@ -99,6 +99,13 @@
             "align_top": 72
         },
         {
+            "name": "Clockmaster Conall",
+            "height": "5'0''",
+            "art": "clockmaster conall",
+            "align_bottom": 21,
+            "align_top": 40
+        },
+        {
             "name": "Fathom (moth)",
             "height": "4'11''",
             "art": "fathom moth",
