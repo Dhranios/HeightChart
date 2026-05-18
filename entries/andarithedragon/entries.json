@@ -9,11 +9,18 @@
             "align_top": 175
         },
         {
-            "name": "Andari (feral)",
-            "height": "1'5''",
-            "art": "andari feral",
+            "name": "Andari (large feral)",
+            "height": "300",
+            "art": "andari large feral",
             "align_bottom": 711,
             "align_top": 673
+        },
+        {
+            "name": "Andari (small feral)",
+            "height": "1'5''",
+            "art": "andari small feral",
+            "align_bottom": 656,
+            "align_top": 415
         }
     ]
 }
