@@ -4,8 +4,8 @@
             "name": "Neo",
             "height": "5'4''",
             "art": "neo",
-            "align_bottom": 244,
-            "align_top": 44
+            "align_bottom": 44,
+            "align_top": 244
         }
     ]
 }
