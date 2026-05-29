@@ -1,6 +1,13 @@
 {
     "entries": [
         {
+            "name": "Encore",
+            "height": "333",
+            "art": "encore",
+            "align_bottom": 126,
+            "align_top": 167
+        },
+        {
             "name": "Cipher",
             "height": "200",
             "art": "cipher",
