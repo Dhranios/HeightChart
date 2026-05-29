@@ -1,0 +1,18 @@
+{
+    "entries": [
+        {
+            "name": "Cyber (feral)",
+            "height": "37'9.6''",
+            "art": "cyber feral",
+            "align_bottom": 135,
+            "align_top": 1557
+        },
+        {
+            "name": "Cyber (anthro)",
+            "height": "6'4.8''",
+            "art": "cyber anthro",
+            "align_bottom": 76,
+            "align_top": 383
+        }
+    ]
+}
