@@ -8,18 +8,18 @@
             "align_top": 57
         },
         {
+            "name": "Admin'",
+            "height": "8'9''",
+            "art": "admin",
+            "align_bottom": 183,
+            "align_top": 91
+        },
+        {
             "name": "Mitch'",
             "height": "7'9''",
             "art": "mitch",
             "align_bottom": 193,
             "align_top": 340
-        },
-        {
-            "name": "Admin'",
-            "height": "6'5''",
-            "art": "admin",
-            "align_bottom": 183,
-            "align_top": 91
         }
     ]
 }
