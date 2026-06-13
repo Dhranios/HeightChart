@@ -85,6 +85,13 @@
             "align_top": 28
         },
         {
+            "name": "Reed Orchid Bean",
+            "height": "5'4''",
+            "art": "reed orchid bean",
+            "align_bottom": 46,
+            "align_top": 27
+        },
+        {
             "name": "Stellar (ferret)",
             "height": "5'4''",
             "art": "stellar ferret",
