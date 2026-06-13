@@ -27,7 +27,7 @@ Go to `entries/<owner>/entries.json`, and add the following value to the list of
 ```
 {
     "name": "<Character name>",
-    "height": "<height in either cm (200) or metric (6`8``)",
+    "height": "<height in either cm (200) or feet and inches (6`8``)",
     "art": "<file name of the art excluding .png suffix>",
     "align_bottom": <amount of pixels from the bottom to exclude/move below the floor to align feet to the ground>,
     "align_top": <amount of pixels from the top to exclude in height; should align with the top of the head excluding horns/ears/hair>
