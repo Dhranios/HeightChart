@@ -27,6 +27,13 @@
             "art": "m0ff",
             "align_bottom": 121,
             "align_top": 171
+        },
+        {
+            "name": "Yakovna",
+            "height": "3'5''",
+            "art": "yakovna",
+            "align_bottom": 158,
+            "align_top": 214
         }
     ]
 }
