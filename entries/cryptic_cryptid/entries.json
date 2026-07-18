@@ -11,8 +11,8 @@
             "name": "0/R0",
             "height": "8'6''",
             "art": "0r0",
-            "align_bottom": 23,
-            "align_top": 94
+            "align_bottom": 92,
+            "align_top": 399
         },
         {
             "name": "Nyla Vanduur",
@@ -29,9 +29,9 @@
             "align_top": 171
         },
         {
-            "name": "Yakovna",
+            "name": "Yakovna Stal'",
             "height": "3'5''",
-            "art": "yakovna",
+            "art": "yakovna stal",
             "align_bottom": 158,
             "align_top": 214
         }
