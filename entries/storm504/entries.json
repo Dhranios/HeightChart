@@ -1,11 +1,25 @@
 {
     "entries": [
         {
+            "name": "Mori Ryujin",
+            "height": "6'1''",
+            "art": "mori ryujin",
+            "align_bottom": 117,
+            "align_top": 194
+        },
+        {
             "name": "Oluja Ortus",
             "height": "6'0''",
             "art": "oluja ortus",
             "align_bottom": 65,
             "align_top": 196
+        },
+        {
+            "name": "Mukachi Ryujin",
+            "height": "5'8''",
+            "art": "mukachi ryujin",
+            "align_bottom": 47,
+            "align_top": 270
         }
     ]
 }
