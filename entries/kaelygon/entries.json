@@ -2,10 +2,10 @@
     "entries": [
         {
             "name": "Tiena",
-            "height": "120",
+            "height": "100",
             "art": "tiena",
             "align_bottom": 97,
-            "align_top": 200
+            "align_top": 305
         }
     ]
 }
