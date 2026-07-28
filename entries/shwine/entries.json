@@ -1,0 +1,19 @@
+{
+    "owner_name": "shwine_",
+    "entries": [
+        {
+            "name": "Sebby",
+            "height": "6'5''",
+            "art": "sebby",
+            "align_bottom": 78,
+            "align_top": 80
+        },
+        {
+            "name": "Ruby",
+            "height": "4'10''",
+            "art": "ruby",
+            "align_bottom": 87,
+            "align_top": 50
+        }
+    ]
+}

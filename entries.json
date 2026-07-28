@@ -1,6 +1,8 @@
 {
     "charts": [
+        "AllOwners",
         "CiphersColosseum",
+        "MaTsServer",
         "SynthRevolution",
         "ThatMansChillzone",
         "VaZhoraStation"

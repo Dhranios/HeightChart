@@ -1,6 +1,13 @@
 {
     "entries": [
         {
+            "name": "Azimuth",
+            "height": "40'0''",
+            "art": "azimuth",
+            "align_bottom": 101,
+            "align_top": 345
+        },
+        {
             "name": "Athena",
             "height": "18'0''",
             "art": "athena",
