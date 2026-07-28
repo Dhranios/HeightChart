@@ -53,3 +53,10 @@
   background: blue;
   z-index: 0;
 }
+.entry-top-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: green;
+  z-index: 0;
+}

@@ -1,0 +1,11 @@
+{
+    "entries": [
+        {
+            "name": "Striker",
+            "height": "4200",
+            "art": "striker",
+            "align_bottom": 100,
+            "align_top": 807
+        }
+    ]
+}

@@ -368,6 +368,11 @@ class Entry {
       this.alignBottom = 0;
       this.alignTop = 0;
     };
+    let entryTopLine = document.createElement('div');
+    entryTopLine.className = 'entry-top-line';
+    entryTopLine.style.height = `2px`;
+    entryTopLine.style.width = "100%";
+    entryTopLine.style.top = `${this.alignTop}px`;
     this.img.onload = () => {
       const naturalHeight = this.img.naturalHeight;
 
@@ -375,6 +380,10 @@ class Entry {
 
       const scale = this.heightCm / characterHeight;
       this.alignBottom = this.alignBottom * scale;
+      if (this.heightCm > 100) {
+        entryTopLine.style.height = `${2 * this.heightCm / 100}px`;
+      }
+      entryTopLine.style.top = `${this.alignTop * scale}px`;
       this.alignTop = this.alignTop * scale;
 
       this.img.style.height = (naturalHeight * scale) + "px";
@@ -391,6 +400,7 @@ class Entry {
     this.imageWrapper.appendChild(this.img);
     this.element.appendChild(this.textWrapper);
     this.element.appendChild(this.imageWrapper);
+    this.imageWrapper.appendChild(entryTopLine);
     this.previousTextSize = HeightButton.getBoundingClientRect().height * 3;
     this.updateText();
   }
