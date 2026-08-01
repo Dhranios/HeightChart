@@ -1,0 +1,18 @@
+{
+    "entries": [
+        {
+            "name": "Rain",
+            "height": "7'4''",
+            "art": "rain",
+            "align_bottom": 85,
+            "align_top": 50
+        },
+		{
+            "name": "Kandi",
+            "height": "6'1''",
+            "art": "kandi",
+            "align_bottom": 18,
+            "align_top": 40
+        }
+    ]
+}
