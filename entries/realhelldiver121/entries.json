@@ -1,0 +1,11 @@
+{
+    "entries": [
+        {
+            "name": "Stahlkreatur",
+            "height": "5'11''",
+            "art": "stahlkreatur",
+            "align_bottom": 27,
+            "align_top": 48
+        }
+    ]
+}

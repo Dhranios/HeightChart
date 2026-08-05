@@ -92,6 +92,13 @@
             "align_top": 27
         },
         {
+            "name": "Milo",
+            "height": "5'4''",
+            "art": "milo",
+            "align_bottom": 33,
+            "align_top": 8
+        },
+        {
             "name": "Stellar (ferret)",
             "height": "5'4''",
             "art": "stellar ferret",
