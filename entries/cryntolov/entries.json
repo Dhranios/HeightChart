@@ -1,16 +1,16 @@
 {
     "entries": [
         {
-            "name": "Cryntolov Hylumn (dragon)",
+            "name": "Cryntolov Thylumn (dragon)",
             "height": "5'11''",
-            "art": "cryntolov hylumn dragon",
+            "art": "cryntolov thylumn dragon",
             "align_bottom": 45,
             "align_top": 321
         },
         {
-            "name": "Cryntolov Hylumn (synth)",
+            "name": "Cryntolov Thylumn (synth)",
             "height": "5'11''",
-            "art": "cryntolov hylumn synth",
+            "art": "cryntolov thylumn synth",
             "align_bottom": 18,
             "align_top": 33
         }

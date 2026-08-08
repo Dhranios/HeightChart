@@ -6,6 +6,13 @@
             "art": "azy",
             "align_bottom": 145,
             "align_top": 223
+        },
+        {
+            "name": "Arcanis",
+            "height": "5'1''",
+            "art": "arcanis",
+            "align_bottom": 12,
+            "align_top": 84
         }
     ]
 }
