@@ -13,6 +13,13 @@
             "art": "cyber anthro",
             "align_bottom": 76,
             "align_top": 383
+        },
+        {
+            "name": "Cyber (synth)",
+            "height": "6'4.8''",
+            "art": "cyber synth",
+            "align_bottom": 90,
+            "align_top": 49
         }
     ]
 }
