@@ -1,12 +1,12 @@
 {
     "entries": [
         {
-            "name": "Zephyris'",
+            "name": "Zephyris",
             "height": "8'0''",
             "art": "zephyris",
             "align_bottom": 145,
             "align_top": 1200
-        }
+        },
         {
             "name": "Thel'",
             "height": "7'0''",
