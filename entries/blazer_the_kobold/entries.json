@@ -9,10 +9,10 @@
         },
         {
             "name": "Blaze",
-            "height": "5'5''",
+            "height": "4'0''",
             "art": "blaze",
-            "align_bottom": 27,
-            "align_top": 17
+            "align_bottom": 125,
+            "align_top": 50
         }
     ]
 }
